@@ -1,8 +1,4 @@
 
-
-
-
-
 def is_unique1(word):
 	"""O(n) space, O(n) runtime """
 	visited = set()
@@ -24,9 +20,9 @@ def is_unique2(word):
 
 def is_unique3(word):
 	"""Constant Space, O(n^2) runtime"""
-	for ch in word:
-		for ch2 in word:
-			if ch == ch2:
+	for i, ch in enumerate(word):
+		for j in range(i+1, len(word)):
+			if ch == word[j]:
 				return False
 	return True
 
