@@ -29,3 +29,9 @@ if __name__ == '__main__':
 	head = make_LL([1,2,3,5,3,2,1])
 	assert is_palindrome(head) == True
 	print "Passed Test 2."
+	head = make_LL([1]) == True
+	assert is_palindrome(head) == True
+	print "Passed Test 3."
+	head = make_LL([5,4,3,2,1])
+	assert is_palindrome(head) == False
+	print "Passed Test 4."
